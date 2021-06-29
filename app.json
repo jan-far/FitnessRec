@@ -1,12 +1,37 @@
 {
-  "name": "myapp",
-  "displayName": "myapp",
+  "name": "FitnessRec",
+  "displayName": "FitnessRec",
   "expo": {
-    "name": "myapp",
-    "slug": "myapp",
+    "name": "FitnessRec",
+    "slug": "FitnessRec",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "orientation": "portrait",
+    "description": "The best triathlon training app in the world.",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#292477"
+    },
+    "notification": {
+      "androidMode": "default",
+      "icon": "./assets/icon.png"
+    },
+    "ios": {
+      "bundleIdentifier": "org.fitnessRec.exp",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "org.fitnessRec.exp",
+      "versionCode": 1,
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "VIBRATE"
+      ]
+    }
   }
 }
